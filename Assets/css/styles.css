@@ -43,26 +43,23 @@ text-align: center;
     left: 110px;
 }
 .search button{
-    border: 10;
+    border: 0;
     outline: 0;
     background: #ebfffc;
     border-radius: 50%;  
-    width: 50px;
+    width: 35px;
     cursor: pointer;
-    height:50px;
+    height:35px;
     position: relative;
-    left: 350px
-    
+    top: -37px;
+    margin-left: 370px
     
 
-    
-}
+    }
 .search button img{
-    width: 16px;
-    
-    position: relative;
-    
+    width: 20px;
 }
+
 .weather-icon{
     width: 50px;
     margin-top: 30px;
@@ -88,7 +85,7 @@ text-align: center;
     
 }
 .H-icon{
-    top: 0px;
+    top: 25px;
     width: 0px;
     position: relative;
     
@@ -96,16 +93,23 @@ text-align: center;
 .H-icon img{
     width: 50px;
    position: relative;
-    top: 3px;
+    top: 20px;
 }
 .W-icon img{
     position: relative;
-    right: -50px;
-    top: -80px;
+    right: -80px;
+    top: -70px;
+    width: 50px
 }
 .humidity {
-
+position: relative;
+    
 }
 .wind {
+   position: relative;
+    margin-left: 45px
+    }
+.wind2 {
+    margin-left: 35px
     
 }
