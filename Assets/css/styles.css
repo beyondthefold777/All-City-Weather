@@ -13,14 +13,18 @@ body {
 }
 /* targets weather app card properties */
 .card {
-height: 500px;
+height: 550px;
 max-width: 500px;
-background: linear-gradient(135deg, #00feba, #5b548a);
-color: #fff;
+/* background: linear-gradient(135deg, #00feba, #5b548a); */
+background-image: url(/All-City-Weather/Assets/Images/images/brazil4k.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+color: #4fce8c;
 margin: 100px auto 0;
 border-radius: 20px;
 padding: 20px;
 text-align: center;
+    font-weight: 40px;
 }
 .search {
     width: 100px;
@@ -67,7 +71,10 @@ text-align: center;
 .weather h1{
   font-size: 30px; 
   font-weight: 500; 
-  margin-top: 0px
+ position: relative;
+    top: -10px
+    color: #fff;
+    
 
 }
 .weather h2{
@@ -93,17 +100,24 @@ text-align: center;
 .H-icon img{
     width: 50px;
    position: relative;
-    top: 20px;
+    top: 1px;
+  
 }
 .W-icon img{
     position: relative;
     right: -80px;
     top: -70px;
     width: 50px
+   
 }
 .humidity {
 position: relative;
+    top: 5px;
     
+}
+.humidity2 {
+    top: 5px;
+    position: relative;
 }
 .wind {
    position: relative;
@@ -112,4 +126,34 @@ position: relative;
 .wind2 {
     margin-left: 35px
     
+}
+.fiveday {
+    font-size: large;
+    
+    position: relative;
+}
+.day1 {
+    position: relative;
+    right: 180px;
+    top: 30px
+}
+.day2 {
+    position: relative;
+    right: 100px;
+    top: 12px
+}
+.day3 {
+    position: relative;
+    right: 8px;
+    top: -6px
+}
+.day4 {
+    position: relative;
+    left: 85px;
+    top: -23.5px
+}
+.day5 {
+    position: relative;
+    left: 160px;
+    top: -41px
 }
