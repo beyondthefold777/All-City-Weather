@@ -13,6 +13,8 @@ async function checkweather(cityName) {
     document.querySelector(".temp").innerHTML = data.list[0].main.temp + "°F";
     document.querySelector(".humidity").innerHTML = data.list[0].main.humidity + "%";
     document.querySelector(".wind").innerHTML = data.list[0].wind.speed + " mph";
+    const date = new Date(data.list[0].dt * 1000);
+    document.querySelector(".date").innerHTML = date.toDateString();
 }
  
 searchBtn.addEventListener("click", ()=> {
