@@ -1,47 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AllCityWeather</title>
-    <link rel="stylesheet" href="/All-City-Weather/Assets/css/styles.css" />
-</head>
-<body>
-    here we have our css card for the weather app
-<div class="card">
-    <div class="search">
-        <input type="text" placeholder="enter the city name"
-        spellcheck="false">
-        <button><img src="/All-City-Weather/Assets/Images/images/search.png"></button>
-        </div>
-      <div class="weather">
-        <img src="/All-City-Weather/Assets/Images/images/rain.png" class="weather-icon">
-        <h1 class="temp">60°F</h1>
-        <h2 class="city">New York</h2>
-        <div class="H-icon">
-            <img src="/All-City-Weather/Assets/Images/images/humidity.png" id="humidity">
-            <div>
-             
-                <p class="humidity">50%</p>
-                <p class="humidity2">Humidity</p>
-                </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AllCityWeather</title>
+        <link rel="stylesheet" href="/All-City-Weather/Assets/css/styles.css" />
+    </head>
+    
+    <body>
+        <div class="card">
+            <div class="search">
+                <input type="text" placeholder="enter the city name" spellcheck="false">
+                <button><img src="/All-City-Weather/Assets/Images/images/search.png"></button>
             </div>
+            <div class="weather">
+                <img src="/All-City-Weather/Assets/Images/images/rain.png" class="weather-icon">
+                <h1 class="temp">60°F</h1>
+                <h2 class="city">New York</h2>
+                <div class="H-icon">
+                    <img src="/All-City-Weather/Assets/Images/images/humidity.png" id="humidity">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p class="humidity2">Humidity</p>
+                    </div>
+                </div>
                 <div class="W-icon">
                     <img src="/All-City-Weather/Assets/Images/images/wind.png" id="wind">
                     <div>
-                    <p class="wind">20mph</p>
-                    <p class="wind2">Wind Speed</p>
+                        <p class="wind">20mph</p>
+                        <p class="wind2">Wind Speed</p>
                     </div>
+                </div> 
+                <div class="place-container">
+                    <div class="time-zone" id="timezone">Eastern Standard Time</div>
+                    <div id="country" class="country">US</div>
                 </div>
-                <p class="fiveday">5 Day Forecast</p>
-                <p class="day1">Monday</p>
-                <p class="day2">Tuesday</p>
-                <p class="day3">Wednesday</p>
-                <p class="day4">Thursday</p>
-                <p class="day5">Friday</p>
-                    
-                   
-         
+            </div>
+            <div class="date-container">
+                <p class="time">12:30</p>
+                    <p class="am-pm">PM</p>
+                </div>
+                <div class="date" id="date">
+                    Wednesday, 1 May
+                </div>
+            </div>
+            <div class="weather-forecast-item1">
+                <div class="day">Thursday</div>
+                <img src="" alt="weather-icon" class="w-icon">
+                <div class="temp">Night - 60&#176; F</div>
+                <div class="temp">Day - 60&#176; F</div>
+            </div>
+            <div class="weather-forecast-item2">
+                <div class="day">Thursday</div>
+                <img src="" alt="weather-icon" class="w-icon">
+                <div class="temp">Night - 60&#176; F</div>
+                <div class="temp">Day - 60&#176; F</div>
+            </div>  
+          <div class="weather-forecast-item3">
+            <div class="day">Thursday</div>
+            <img src="" alt="weather-icon" class="w-icon">
+            <div class="temp">Night - 60&#176; F</div>
+            <div class="temp">Day - 60&#176; F</div>
+        </div> 
+                <div class="weather-forecast-item4">
+                <div class="day">Thursday</div>
+                <img src="" alt="weather-icon" class="w-icon">
+                <div class="temp">Night - 60&#176; F</div>
+                <div class="temp">Day - 60&#176; F</div>
+            </div>   
+            <div class="weather-forecast-item5">
+                <div class="day">Thursday</div>
+                <img src="" alt="weather-icon" class="w-icon">
+                <div class="temp">Night - 60&#176; F</div>
+                <div class="temp">Day - 60&#176; F</div>
+            </div>
+
+    
+            
+            
+          
+
+
+ 
+
+
+
     
 </body>
 <script src="/All-City-Weather/Assets/js/Form.Js">
