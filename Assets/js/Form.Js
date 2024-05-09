@@ -20,23 +20,27 @@ async function checkweather(cityName) {
     document.querySelector(".temp5").innerHTML = data.list[39].main.temp + "°F";
     // displaying our icons
     document.querySelector(".icon1").src = "https://openweathermap.org/img/wn/" + data.list[8].weather[0].icon + ".png";
+    document.querySelector(".icon2").src = "https://openweathermap.org/img/wn/" + data.list[16].weather[0].icon + ".png";
+    document.querySelector(".icon3").src = "https://openweathermap.org/img/wn/" + data.list[24].weather[0].icon + ".png";
+    document.querySelector(".icon4").src = "https://openweathermap.org/img/wn/" + data.list[32].weather[0].icon + ".png";
+    document.querySelector(".icon5").src = "https://openweathermap.org/img/wn/" + data.list[39].weather[0].icon + ".png";
     // date at the top of the page
     const date = new Date(data.list[0].dt * 1000);
     document.querySelector(".date").innerHTML = date.toDateString();
     // displaying the days in the five day forecast
-    const date1 = data.list[5].dt_txt
-    document.querySelector(".day1").innerHTML = date1;
-    const date2 = data.list[13].dt_txt
-    document.querySelector(".day2").innerHTML = date2;
-    const date3 = data.list[21].dt_txt
-    document.querySelector(".day3").innerHTML = date3;
-    const date4 = data.list[29].dt_txt
-    document.querySelector(".day4").innerHTML = date4;
-    const date5 = data.list[37].dt_txt
-    document.querySelector(".day5").innerHTML = date5;
+    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const date1 = new Date(data.list[8].dt_txt).getDay();
+    document.querySelector(".day1").innerHTML = days[new Date(data.list[8].dt_txt).getDay()];
+    const date2 = new Date(data.list[16].dt_txt).getDay();
+    document.querySelector(".day2").innerHTML = days[new Date(data.list[16].dt_txt).getDay()];
+    const date3 = new Date(data.list[24].dt_txt).getDay();
+    document.querySelector(".day3").innerHTML = days[new Date(data.list[24].dt_txt).getDay()];
+    const date4 = new Date(data.list[32].dt_txt).getDay();
+    document.querySelector(".day4").innerHTML = days[new Date(data.list[32].dt_txt).getDay()];
+    const date5 = new Date(data.list[39].dt_txt).getDay();
+    document.querySelector(".day5").innerHTML = days[new Date(data.list[39].dt_txt).getDay()];
 }
- 
-searchBtn.addEventListener("click", () => {
+    searchBtn.addEventListener("click", () => {
     checkweather(searchBox.value);
  
     const cityValue = searchBox.value;
