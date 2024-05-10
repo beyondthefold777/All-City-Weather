@@ -3,9 +3,16 @@ const city = document.getElementById('city');
 const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
  
+// Call the function when the page loads
+window.onload = function() {
+    navigator.geolocation.getCurrentPosition(function(position) {
+        checkweather(position.coords.latitude, position.coords.longitude);
+    });
+};
+ 
 // function for current weather and 5 day forecast
-async function checkweather(cityName) {
-    const response = await fetch(apiUrl + "&q=" + cityName);
+async function checkweather(lat, lon) {
+    const response = await fetch(apiUrl + "&lat=" + lat + "&lon=" + lon);
     let data = await response.json();
     console.log(data);
  
